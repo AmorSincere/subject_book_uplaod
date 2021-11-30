@@ -45,9 +45,9 @@
                             </div>
                             <div>
                                  {% if perms.subject.add_course %}
-                                <a href="{% url 'subject:update_course' cours.id %}" class="btn btn-outline-secondary">&#128394</a>
+                                <a href="{% url 'subject:update_course' cours.id %}" class="btn btn-outline-secondary"><i class="bi bi-pencil-square"></i></a>
                                 <a href="{% url 'subject:delete_course' cours.id %}"
-                                   class="btn btn-outline-danger mx-3">&#128465</a>
+                                   class="btn btn-outline-danger mx-3"><i class="bi bi-trash"></i></a>
                                 {% endif %}
                             </div>
                         </div>

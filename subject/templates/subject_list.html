@@ -20,8 +20,8 @@
 
                                 <div class="">
                                       {% if perms.book.add_book or perms.course.add_course or perms.subject.add_subject %}
-                                    <a href="{% url 'subject:update_subject' subject.id %}" class="btn btn-outline-secondary">&#128394</a>
-                                  <a href="{% url 'subject:delete_subject' subject.id %}" class="btn btn-outline-danger mx-3">&#128465</a>
+                                    <a href="{% url 'subject:update_subject' subject.id %}" class="btn btn-outline-secondary"><i class="bi bi-pencil-square"></i></a>
+                                  <a href="{% url 'subject:delete_subject' subject.id %}" class="btn btn-outline-danger mx-3"><i class="bi bi-trash"></i></a>
                                         {% endif %}
                                 </div>
 

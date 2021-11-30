@@ -19,10 +19,10 @@
 
                                 <div>
                                     {% if perms.subject.add_book or perms.subject.add_course or perms.subject.add_subject %}
-                                        <a href="{% url 'subject:update_book' book.id %}" class="btn btn-dark btn-sm">&#128394</a>
-                                        <a href="{% url 'subject:delete_book' book.id %}" class="btn btn-danger btn-sm">&#128465</a>
+                                        <a href="{% url 'subject:update_book' book.id %}" class="btn btn-dark btn-sm"><i class="bi bi-pencil-square"></i></a>
+                                        <a href="{% url 'subject:delete_book' book.id %}" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></a>
                                     {% endif %}
-                                    <a download target="_blank"  href="{% url 'subject:download_book' book.generated_name %}" class="btn btn-outline-primary btn-sm">&#8681</a>
+                                    <a download target="_blank"  href="{% url 'subject:download_book' book.generated_name %}" class="btn btn-outline-primary btn-sm"><i class="bi bi-arrow-down"></i></a>
                                 </div>
 
                             </div>
